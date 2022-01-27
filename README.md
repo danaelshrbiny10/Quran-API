@@ -1,3 +1,2 @@
 # Quran-API
-The Holy Quran Project using Flask
-
+Get a complete Quran edition That Returns in the audio or text format
