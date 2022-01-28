@@ -10,7 +10,7 @@ api = Api(app)
 ayah_url = 'http://api.alquran.cloud/v1/ayah/262/editions/quran-uthmani,en.asad,en.pickthall%20-'  # Returns Ayat Al Kursi from 3 editions: Simple Quran, Muhammad Asad and Maramduke Pickthall
 
 while True:
-    class Quran(Resource):
+    class Ayah(Resource):
 
         def get(self):
             payload={}
@@ -22,7 +22,7 @@ while True:
 
     break
 
-api.add_resource(Quran, '/ayah',methods=['GET'])
+api.add_resource(Ayah, '/ayah',methods=['GET'])
     
 
 

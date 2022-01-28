@@ -10,7 +10,7 @@ api = Api(app)
 adhan_url = " https://api.aladhan.com/v1/calendarByCity?city=egypt&country=kaferelshiekh&method=1&month=01&year=2022"  
 
 while True:
-    class Quran(Resource):
+    class Adhan(Resource):
 
         def get(self):
             payload={}
@@ -22,7 +22,7 @@ while True:
 
     break
 
-api.add_resource(Quran, '/adhan',methods=['GET'])
+api.add_resource(Adhan, '/adhan',methods=['GET'])
     
 
 

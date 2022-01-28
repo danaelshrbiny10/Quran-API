@@ -10,7 +10,7 @@ api = Api(app)
 juz_url = 'http://api.alquran.cloud/v1/juz/30/en.asad%20-' # Get a Juz of the Quran
 
 while True:
-    class Quran(Resource):
+    class Juz(Resource):
 
         def get(self):
             payload={}
@@ -22,7 +22,7 @@ while True:
 
     break
 
-api.add_resource(Quran, '/juz',methods=['GET'])
+api.add_resource(Juz, '/juz',methods=['GET'])
     
 
 

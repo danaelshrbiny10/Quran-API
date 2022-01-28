@@ -9,7 +9,7 @@ api = Api(app)
 edition_url = 'http://api.alquran.cloud/v1/edition'  # Lists all available editions. 
 
 while True:
-    class Quran(Resource):
+    class Holy(Resource):
 
         def get(self):
             payload={}
@@ -21,7 +21,7 @@ while True:
 
     break
 
-api.add_resource(Quran, '/',methods=['GET'])
+api.add_resource(Holy, '/',methods=['GET'])
     
 
 
