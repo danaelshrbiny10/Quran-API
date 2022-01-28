@@ -6,7 +6,7 @@ import requests
 app = Flask(__name__)
 api = Api(app)
 
-quran_url = " http://api.alquran.cloud/v1/quran/ar.alafasy -"  # Get a complete Quran edition
+surah_url = 'http://api.alquran.cloud/v1/surah'  # Get a Surah of the Quran 
 
 while True:
     class Quran(Resource):
@@ -15,13 +15,13 @@ while True:
             payload={}
             headers = {}
 
-            response = requests.request("GET" ,quran_url ,headers=headers ,data=payload).json()
+            response = requests.request("GET" ,surah_url ,headers=headers ,data=payload).json()
             print(response)
             
 
     break
 
-api.add_resource(Quran, '/quran',methods=['GET'])
+api.add_resource(Quran, '/surah',methods=['GET'])
     
 
 
