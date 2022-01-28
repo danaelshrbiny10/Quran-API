@@ -6,7 +6,7 @@ import requests
 app = Flask(__name__)
 api = Api(app)
 
-
+# Get adhan calendar By City
 adhan_url = " https://api.aladhan.com/v1/calendarByCity?city=egypt&country=kaferelshiekh&method=1&month=01&year=2022"  
 
 while True:
